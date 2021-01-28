@@ -1,2 +1,2 @@
 #!/bin/bsh
-chmod =753 hello .
+chmod 753 hello
