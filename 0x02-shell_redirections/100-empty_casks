@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -Ra
+find -Ra -empty -name ".*"
