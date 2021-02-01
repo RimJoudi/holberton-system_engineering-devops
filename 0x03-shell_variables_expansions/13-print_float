@@ -1,0 +1,2 @@
+#!/bin/bash
+printf "ù.2f\n" $NUM
