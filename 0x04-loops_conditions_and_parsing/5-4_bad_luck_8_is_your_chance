@@ -8,7 +8,7 @@ do
         echo "bad luck"
     elif [ $i -eq 8 ]
     then
-        echo "is your chance"
+        echo "good luck"
     else
         echo "Holberton School"
     fi
