@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Bash script that loops from 1 to 10 in Chinese culture
+# Bash script that loops from 1 to 10 in Chinese culture
 i=1
 while [ $i -le 10 ]
 do
