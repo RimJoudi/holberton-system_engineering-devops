@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-i=0
-while [ $i -le 10 ]
-do
-    echo "Holberton School"
-    (( i++ ))
-done
-
