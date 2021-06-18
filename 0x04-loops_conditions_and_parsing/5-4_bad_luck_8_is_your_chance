@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#Bash script that loops from 1 to 10 in Chinese culture
+i=1
+while [ $i -le 10 ]
+do
+    if [ "$i" -eq 4 ]
+    then
+        echo "bad luck"
+    elif [ "$i" -eq 8 ]
+    then
+        echo "is your chance"
+    else
+        echo "Holberton School"
+    fi
+    (( i++ ))
+done
