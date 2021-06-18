@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Displays "Holberton School" 10 times
 for i in {0..9}
 do
     echo "Holberton School"
