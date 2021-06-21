@@ -6,5 +6,3 @@ do
     trap 'echo "I am invincible!!!"' SIGTERM
     sleep 2
 done
-
-
