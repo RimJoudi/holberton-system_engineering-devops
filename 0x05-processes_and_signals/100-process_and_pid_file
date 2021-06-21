@@ -1,0 +1,13 @@
+#!/bin/usr/env bash
+# displays, interrupts and deletes a file 
+
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'rm /var/run/holbertonscript.pid; echo I hate the kill command; exit' SIGTERM
+trap 'rm /var/run/holbertonscript.pid; exit' SIGQUIT
+echo $$ > /var/run/holbertonscript.pid
+
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
