@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # displays, interrupts and deletes a file 
 
-sudo touch "/var/run/dhkscript.pid"
-echo $$ > "/var/run/dhkscript.pid"
+touch /var/run/dhkscript.pid
+echo $$ > /var/run/dhkscript.pid
 
 while true
 do
-    trap 'echo "I hate the kill command"; sudo rm "/var/run/dhkscript.pid"' SIGTERM
+    trap 'echo "I hate the kill command" ; sudo rm "/var/run/dhkscript.pid"'  SIGTERM
     trap 'echo "Y U no love me?!"' SIGINT
     trap 'sudo rm "/var/run/dhkscript.pid"' SIGQUIT
     echo "To infinity and beyond"
