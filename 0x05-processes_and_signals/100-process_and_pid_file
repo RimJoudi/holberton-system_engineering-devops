@@ -6,9 +6,9 @@ echo $$ > /var/run/dhkscript.pid
 
 while true
 do
-    trap 'echo "I hate the kill command"; sudo rm /var/run/dhkscript.pid' SIGTERM
+    trap 'echo "I hate the kill command"; sudo rm /var/run/dhkscript.pid; exit' SIGTERM
     trap 'echo "Y U no love me?!"' SIGINT
-    trap 'sudo rm /var/run/dhkscript.pid' SIGQUIT
+    trap 'sudo rm /var/run/dhkscript.pid; exit' SIGQUIT
     echo "To infinity and beyond"
     sleep 2
 done
