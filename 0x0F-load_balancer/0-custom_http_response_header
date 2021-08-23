@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Configuration
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+sudo echo "Holberton School" > /var/www/html/index.nginx-debian.html
+sudo sed -i "/http {/a add_header X-Served-By ${HOSTNAME};" /etc/nginx/nginx.conf
+sudo service nginx reload
+sudo service nginx start
