@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Configuration
+# configures web-02 to be identical to web-01 
 apt-get -y update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'
