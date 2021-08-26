@@ -3,4 +3,4 @@
 
 sudo rm -rf /etc/nginx/sites-enabled/default
 sudo ln -s /etc/nginx/sites-sites-available/default  /etc/nginx/sites-enabled/
-sudo restart ngnix server
+sudo server ngnix restart  
