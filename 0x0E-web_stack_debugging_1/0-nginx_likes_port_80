@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # installation Nginx from listening on port 80
 sudo rm -rf /etc/nginx/sites-enabled/default
-sudo ln -s /etc/nginx/sites-sites-available/default  /etc/nginx/sites-enabled/default
+sudo ln -s /etc/nginx/sites-sites-available/default /etc/nginx/sites-enabled/default
 sudo server ngnix restart  
