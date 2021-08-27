@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # making fix short and sweet
 sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
 sudo pkill -o nginx
