@@ -10,7 +10,7 @@ if __name__ == '__main__':
     employee_id = sys.argv[1]
     url_todo = 'https://jsonplaceholder.typicode.com/todos/'
     url_user = 'https://jsonplaceholder.typicode.com/users/'
-    todo = requests.get(url_todo, params={'userId': employee_id})
+    todo = requests.get(url_todo, params={'user_id': employee_id})
     user = requests.get(url_user, params={'id': employee_id})
 
     todo_dict_list = todo.json()
