@@ -3,8 +3,6 @@
  export data in the JSON format
 """
 import requests
-import sys
-import csv
 import json
 
 if __name__ == '__main__':
